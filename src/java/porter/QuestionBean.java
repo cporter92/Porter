@@ -1,13 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author Lenovo
- */
 package porter;
 
 import java.sql.Connection;
@@ -42,7 +33,7 @@ public class QuestionBean {
             
             // connect to the database
             connection = DriverManager.getConnection
-            ("jdbc:mysql://[host]", "[username]", "[password]");            
+            ("jdbc:mysql://35.185.94.191:3306/porter", "porter", "tiger");    
             System.out.println("Suceessfully connected to database.");
 
         } catch (Exception ex) {
