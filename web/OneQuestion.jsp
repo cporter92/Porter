@@ -52,6 +52,11 @@
             .choice {
                 display:block;
             }
+            a {
+                display: inline-block;
+                width: 100px;
+                color:black;
+            }
             
             
         </style>
@@ -77,6 +82,8 @@
                     <input type="hidden" name="questionNo" value="<jsp:getProperty name="questionBean" property="questionNo"/>"/>
                     <input type="hidden" name="chapterNo" value="<jsp:getProperty name="questionBean" property="chapterNo"/>"/>
                 </form>
+                <a class="submitButton" href="OneQuestion.jsp?chapterNo=<%= questionBean.getChapterNo()%>&questionNo=<%= questionBean.getQuestionNo() + 1%>">Next Question</a>
+                
             </div>
                    
         </div>
