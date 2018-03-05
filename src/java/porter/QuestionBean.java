@@ -346,7 +346,7 @@ public class QuestionBean {
             if (!getChoiceE().isEmpty())
                 out += "<span class=\"choice\"><input type=\"checkbox\" value=\"e\" name=\"answer\" "+gradeEChecked+"><span class=\"key\">E.</span>" + getChoiceE() + gradeE + "</span>"; 
         }
-         if (isGraded()) out += "\n + " + getHint();
+         if (isGraded()) out += "\n" + getHint();
         return out;
     }
 }
