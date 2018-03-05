@@ -43,6 +43,7 @@ public class QuestionBean {
     }
     public QuestionBean() {
         initializeDB();
+        answer = hint = answerKey = message = hostname = choiceA = choiceB = choiceC = choiceD = choiceE = "";
     }
     
     public void handleGet(HttpServletRequest request) {
